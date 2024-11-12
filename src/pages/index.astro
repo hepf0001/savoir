@@ -5,82 +5,139 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Forside">
-  <article class="pb-16">
-    <h1 class="pb-6 pt-6 max-w-xl mx-auto text-4xl font-semibold uppercase">Eksempler på knapper</h1>
-    <div class="pb-6 max-w-xl mx-auto"><Button variant="primary" size="large">Knap</Button></div>
-    <div class="pb-6 max-w-xl mx-auto"><Button variant="primary" size="medium">Knap</Button></div>
-    <div class="pb-6 max-w-xl mx-auto"><Button variant="primary" size="small">Knap</Button></div>
-    <div class="pb-6 max-w-xl mx-auto"><Button variant="secondary" size="large">Knap</Button></div>
-    <div class="pb-6 max-w-xl mx-auto"><Button variant="secondary" size="medium">Knap</Button></div>
-    <div class="pb-6 max-w-xl mx-auto"><Button variant="secondary" size="small">Knap</Button></div>
-  </article>
+  <!---------------- HERO ---------------->
+  <section class="relative md:py-20 py-10" id="hero">
+    <div class="hidden md:block">
+      <img src="/ink.png" alt="ink" class="w-full" />
+    </div>
+    <div class="md:hidden block pt-10">
+      <img src="/ink_mobil.png" alt="ink" class="w-full" />
+    </div>
+    <div class="overlay absolute inset-0 flex items-center justify-center md:pt-0 pt-28">
+      <section class="max-w-[65rem] mx-auto p-6 flex justify-center" x-data>
+        <div class="text-center">
+          <h1 class="savoir text-white pb-8">SAVOIR</h1>
+          <h2 class="md:max-w-[50rem] pb-8 uppercase">En Display Font, der Kombinerer Bold Kalligrafi med Moderne Linjer</h2>
+          <div class="">
+            <Button variant="primary" size="small">Udforsk SAVOIR her</Button>
+            <Button variant="secondary" size="small">Køb</Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
 
-  <form class="pb-16">
-    <h1 class="pb-6 pt-6 max-w-xl mx-auto text-4xl font-semibold uppercase">Eksemple på forms</h1>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="antal">Antal:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="number" id="antal" placeholder="1" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="levering">Levering:</label>
-      <input class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500" type="radio" id="postnord" name="levering" />
-      <label for="postnord" checked="checked">PostNord</label>
-      <input class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500" type="radio" id="afhent" name="levering" />
-      <label for="afhent">Afhent</label>
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="name">Name:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" id="name" placeholder="Name" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="adresse">Adresse:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" id="name" placeholder="Adresse" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="email">e-mail:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="email" id="e-mail" placeholder="e-mail" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="postnummer">Postnummer:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" id="postnummer" placeholder="Postnummer" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="bynavn">Bynavn:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" id="bynavn" placeholder="Bynavn" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="telefon">Telefon nr:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="tel" id="telefon" placeholder="Telefon nr" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="nyhedsbrev">Nyhedsbrev:</label>
-      <input class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500" type="checkbox" id="nyhedsbrev" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto"><Button variant="primary" size="small">Køb</Button></div>
-  </form>
+  <!---------------- GALLERI ---------------->
+  <section class="overflow-x-hidden md:py-20 py-10">
+    <section class="max-w-[65rem] mx-auto p-6 grid md:grid-cols-2 gap-10">
+      <div class="text-left">
+        <h1 class="text-white pb-4 text-shadow-md">SAVOIR’s unikke design</h1>
+        <h2 class="md:max-w-[40rem] pb-4 text-shadow-md">Oplev den unikke blanding af bold kalligrafi og moderne elementer</h2>
+      </div>
+    </section>
+    <div class="max-w-[65rem] mx-auto p-6">
+      <div class="sticky top-1/4 mangeelementerinview grid md:grid-cols-4 grid-cols-2 gap-0">
+        <div class="relative md:row-span-2 md:col-span-2">
+          <div class="mangeelementer1">
+            <img class="mt-0 mb-0" src="/savoir_hvid.jpg" alt="light leaks" />
+            <!-- <div class="overlay absolute inset-0 bg-gray-800 opacity-0 hover:opacity-50 transition-opacity duration-300"></div> -->
+          </div>
+        </div>
 
-  <article class="pb-16">
-    <h1 class="pb-6 pt-6 max-w-xl mx-auto text-4xl font-semibold uppercase">Eksempler på links</h1>
-    <h3 class="pb-6 max-w-xl mx-auto text-xl font-semibold uppercase">Tekst link</h3>
-    <div class="pb-6 max-w-xl mx-auto"><p>Link til <Link href="https://kea.dk/" target="_blank" variant="textlink" size="standard"> En anden side</Link></p></div>
-    <h3 class="pb-6 max-w-xl mx-auto text-xl font-semibold uppercase">Knap link</h3>
-    <div class="pb-6 max-w-xl mx-auto">
-      <p>Link til <Link href="https://kea.dk/" target="_blank" variant="primary" size="large">En anden side</Link></p>
+        <div class="relative">
+          <div class="mangeelementer2">
+            <img class="mt-0 mb-0" src="/savoir_blue.jpg" alt="ilford sort hvid film" />
+            <!-- <div class="overlay absolute inset-0 bg-gray-800 opacity-0 hover:opacity-50 transition-opacity duration-300"></div> -->
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="mangeelementer3">
+            <img class="mt-0 mb-0" src="/savoir_pink.jpg" alt="gammel film" />
+            <!-- <div class="overlay absolute inset-0 bg-gray-800 opacity-0 hover:opacity-50 transition-opacity duration-300"></div> -->
+          </div>
+        </div>
+
+        <div class="relative md:col-span-2">
+          <div class="mangeelementer4">
+            <img class="mt-0 mb-0 md:hidden block" src="/savoir_orange.jpg" alt="sh" />
+            <img class="mt-0 mb-0 hidden md:block" src="/savoir_orange_2.png" alt="sh" />
+            <!-- <div class="overlay absolute inset-0 bg-gray-800 opacity-0 hover:opacity-50 transition-opacity duration-300"></div> -->
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <p>Link til <Link href="https://kea.dk/" target="_blank" variant="primary" size="medium">En anden side</Link></p>
+  </section>
+
+  <!---------------- HOW TO USE ---------------->
+  <section class="max-w-[65rem] mx-auto p-6 grid md:grid-cols-2 gap-10 md:py-20 py-10">
+    <img class="pb-4 self-center md:order-first order-last" src="/savoir-brug.png" alt="" />
+    <section>
+      <h1 class="pb-4">Brug SAVOIR som display font i dit design</h1>
+      <h2 class="pb-8">Den unikke font kombinerer old style elegance med moderne elementer</h2>
+      <p class="pb-4">SAVOIR er den perfekte displayfont til at skabe et elegant men moderne udtryk til din hjemmeside eller app. Med sin unikke blanding af old style elegance og moderne elementer, skiller SAVOIR sig ud af mængden uden at overdøve resten af designet.</p>
+      <p class="pb-4">Derudover er fonten perfekt til tryksager, alt fra plakater til visitkort – kun din fantasi sætter grænser.</p>
+      <div class="flex justify-center md:pb-20 pb-10"><Button variant="primary" size="small">Køb</Button></div>
+    </section>
+  </section>
+
+  <section>
+    <!---------------- Kalligrafi ---------------->
+
+    <div class="p-6 flex items-center h-screen w-100 bg-cover bg-center sticky top-0" style="background-image: url('/ink_and_pen.png')">
+      <div class="md:w-1/3 md:ml-64 text-box md:mr-64 bg-[#0C1A1B]/80 p-8 md:p-10 rounded-xl shadow-md max-w-[520px] stickyparallax1">
+        <h1 class="pb-8">Inspiration fra de bløde linjer fra kalligrafi</h1>
+        <p class="pb-4">Kalligrafi har været en stor inspiration for SAVOIR. De bløde linjer og elegante sving fra håndskrevne bogstaver skaber en unik og sofistikeret følelse.</p>
+        <p>Kalligrafi har altid været synonymt med elegance og kunstferdighed, og dette er blevet integreret i SAVOIR for at give fonten en varm og personlig karakter.</p>
+      </div>
     </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <p>Link til <Link href="https://kea.dk/" target="_blank" variant="primary" size="small">En anden side</Link></p>
+
+    <!---------------- Moderne element ---------------->
+
+    <div class="p-6 flex items-center justify-end h-screen w-100 bg-cover bg-center sticky top-0" style="background-image: url('/hvid.jpg')">
+      <div class="md:w-1/3 md:ml-64 text-box md:mr-64 bg-[#0C1A1B]/80 p-8 md:p-10 rounded-xl shadow-md max-w-[520px] stickyparallax2">
+        <h1 class="pb-8">Det moderne element</h1>
+        <p class="pb-4">For at skabe en stor kontrast og balancere den klassiske elegance fra kalligrafien, er der arbejdet med en mere moderne og simple tynde linjer.</p>
+        <p>Disse moderne elementer står i kontrast med de mere bold bløde linjer fra kalligrafien, hvilket giver SAVOIR en frisk og dynamisk følelse. Dette moderne element tilføjer en nutidig æstetik, der perfekt komplementerer den klassiske stil og skaber en unik og visuelt tiltrækkende font.</p>
+      </div>
     </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <p>Link til <Link href="https://kea.dk/" target="_blank" variant="secondary" size="large">En anden side</Link></p>
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <p>Link til <Link href="https://kea.dk/" target="_blank" variant="secondary" size="medium">En anden side</Link></p>
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <p>Link til <Link href="https://kea.dk/" target="_blank" variant="secondary" size="small">En anden side</Link></p>
-    </div>
-  </article>
+  </section>
+  <!---------------- Designprocessen ---------------->
+  <section class="max-w-[65rem] mx-auto p-6 grid md:grid-cols-2 gap-10 md:py-40 py-20">
+    <section>
+      <h1 class="pb-4">Designprocessen bag SAVOIR</h1>
+      <h2 class="pb-8">Fra research til færdig font</h2>
+      <p class="pb-4">Processen startede med at dykke ned i typografiens historie og forskellige stilarter, hvilket gav mig en dyb forståelse for fontdesigns udvikling. Jeg skabte et moodboard for at definere en stil, der kombinerede klassisk elegance med moderne elementer.</p>
+      <p class="pb-4">Efterfølgende skitsede jeg på iPad, hvor jeg eksperimenterede med former og linjer. Dette gav mig mulighed for at finjustere designet, indtil jeg var tilfreds.</p>
+      <p class="pb-4">Til sidst digitaliserede jeg skitsen i Illustrator, hvor jeg perfektionerede hver detalje og konverterede designet til en TTF-fil, klar til brug.</p>
+    </section>
+    <img class="self-center" src="savoir-ai.webp" alt="Savoir tegnet i illustrator" />
+  </section>
 </MainLayout>
+
+<script>
+  /* Import af Motion One biblioteket */
+  import { animate, stagger, inView, scroll, timeline } from "motion";
+
+  /* Mange elementer der animerer ind */
+  inView(".mangeelementerinview", () => {
+    animate(".mangeelementer1", { x: [-2000, 0], y: [-50, 0] }, { duration: 1 });
+    animate(".mangeelementer2", { x: [-1500, 0], y: [-100, 0] }, { duration: 3 });
+    animate(".mangeelementer3", { x: [-1000, 0], y: [-150, 0] }, { duration: 3 });
+    animate(".mangeelementer4", { x: [1750, 0] }, { duration: 2 });
+
+    return () => {
+      animate(".mangeelementer1", { x: [-2000, 0], y: [-50, 0] }, { duration: 1 });
+      animate(".mangeelementer2", { x: [-1500, 0], y: [-100, 0] }, { duration: 3 });
+      animate(".mangeelementer3", { x: [-1000, 0], y: [-150, 0] }, { duration: 3 });
+      animate(".mangeelementer4", { x: [1750, 0] }, { duration: 2 });
+    };
+  });
+
+  scroll(animate(".stickyparallax1", { y: [-300, 0] }), {
+    target: document.querySelector(".stickyparallax1"),
+  });
+  scroll(animate(".stickyparallax2", { y: [-300, 0] }), {
+    target: document.querySelector(".stickyparallax2"),
+  });
+</script>

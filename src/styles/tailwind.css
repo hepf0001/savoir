@@ -4,4 +4,58 @@
 
 @layer base{
 
+@font-face {
+    font-family: "savoir";
+    src: url("savoir-regular-webfont.woff") format("woff"), url("savoir-regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+}
+
+.savoir{
+    font-family: "savoir";
+    @apply text-8xl;
+}
+
+h1 {
+    @apply text-5xl;
+    @apply font-medium;
+    @apply text-white;
+    @apply font-lato;
+    @apply uppercase;
+  }
+
+  h2 {
+    @apply text-3xl;
+    @apply font-light;
+    @apply text-white;
+    @apply font-lato;
+  }
+
+
+  p {
+    @apply text-white;
+    @apply font-light;
+    @apply font-lato;
+  } 
+
+  a,
+  li {
+    @apply font-normal;
+    @apply font-lato;
+  }
+
+  @media (max-width: 600px) {
+    .savoir{
+      font-family: "savoir";
+      @apply text-5xl;
+  }
+
+    h1 {
+      @apply text-3xl;
+    }
+
+    h2 {
+      @apply text-2xl;
+    }
+  }
+
 }
