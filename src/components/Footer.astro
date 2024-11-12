@@ -1,20 +1,30 @@
 ---
-
+import Button from "../components/Button.astro";
 ---
 
 <div class="max-w-[65rem] mx-auto p-6">
-  <section class="grid md:grid-cols-3 gap-20">
+  <section class="grid md:grid-cols-3 gap-20 py-10">
     <section>
       <a href="#logo">
         <img class="w-32 pb-4" src="/logo.png" alt="" />
       </a>
       <p>SAVOIR er en unik display font, der kombinerer bold kalligrafi med moderne, tynde linjer for en visuelt tiltrækkende typografi.</p>
     </section>
+
     <section>
       <h1 class="md:text-3xl text-2xl normal-case font-light">Udforsk SAVOIR</h1>
+      <ul class="text-left">
+        <li class="py-2 text-white"><a href="#udforsk">Udforsk font</a></li>
+        <li><Button variant="primary" size="small">Køb</Button></li>
+      </ul>
     </section>
+
     <section>
       <h1 class="md:text-3xl text-2xl normal-case font-light">Bag fonten</h1>
+      <ul class="text-left">
+        <li class="py-2 text-white"><a href="#koncept">Koncept</a></li>
+        <li class="py-2 text-white"><a href="#">Process</a></li>
+      </ul>
     </section>
   </section>
 </div>
